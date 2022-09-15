@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegistrationActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:text="Registro de usuario"
+                android:textColor="@color/blue_main"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/eTxt_NombreRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/blue_second"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+
+
+            <EditText
+                android:id="@+id/eTxt_ApellidoRegistro1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Apellido Paterno"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/blue_second"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/eTxt_ApellidoRegistro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Apellido Materno"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/blue_second"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/eTxt_CorreoRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Correo Electronico"
+                android:textColorHint="@color/blue_second"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/eTxt_PasswordRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="@color/blue_second"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/eTxt_CodigoEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Codigo Empleado"
+                android:inputType="phone"
+                android:textColorHint="@color/blue_second"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/eTxt_CodigoTerminal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Codigo Terminal"
+                android:inputType="phone"
+                android:textColorHint="@color/blue_second"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/eTxt_Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Descripcion"
+                android:inputType="phone"
+                android:textColorHint="@color/blue_second"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/eTxt_Identificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Identificacion"
+                android:inputType="phone"
+                android:textColorHint="@color/blue_second"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btn_Enviar_Registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Registrarse"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue_main"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
