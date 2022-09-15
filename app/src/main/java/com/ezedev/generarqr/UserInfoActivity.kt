@@ -40,11 +40,20 @@ class UserInfoActivity : AppCompatActivity() {
             binding.eTxtNombreEmpleadoUser.text = ("Nombre Empleado: " + it.get("nombre") as String?+ it.get("apellido1") as String?)
 
         }
-
+        binding.btnListar.setOnClickListener {
+            listaUsuario()
+        }
         binding.btnLogout.setOnClickListener {
             cerrarSesion()
         }
 
+    }
+
+    private fun listaUsuario() {
+        val intent = Intent(this, ListFragment::class.java)
+        startActivity(
+            intent
+        )
     }
 
     private fun cerrarSesion() {
